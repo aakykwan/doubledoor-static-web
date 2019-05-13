@@ -1,0 +1,25 @@
+html, body {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.5px; }
+
+#dd-header {
+  background-image: url("../img/bg_header.png");
+  background-position: center top;
+  height: 447px; }
+  #dd-header h1 {
+    padding-top: 42px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff; }
+  #dd-header p.lead {
+    max-width: 570px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #ffffff; }
+
+/*# sourceMappingURL=doubledoor.css.map */

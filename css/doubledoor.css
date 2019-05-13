@@ -11010,6 +11010,14 @@ html, body {
   line-height: normal;
   letter-spacing: 1.5px; }
 
+.container {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.3px;
+  color: #404040; }
+
 #dd-header {
   background-image: url("../img/bg_header.png");
   background-position: center top;
@@ -11061,5 +11069,9 @@ h2 {
   #level-1 .card-img {
     height: 71px;
     width: 70px; }
+
+@media (max-width: 991.98px) {
+  #level-2 {
+    text-align: center !important; } }
 
 /*# sourceMappingURL=doubledoor.css.map */

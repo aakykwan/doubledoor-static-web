@@ -12,6 +12,19 @@ html, body {
   letter-spacing: 1.5px;
 }
 
+@mixin text {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: 0.3px;
+  color: #404040;
+}
+
+.container {
+  @include text;
+}
+
 #dd-header {
   background-image: url('../img/bg_header.png');
   background-position: center top;
@@ -72,17 +85,18 @@ h2 {
     }
 
     .card-text {
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.29;
-      letter-spacing: 0.3px;
-      color: #404040;
+      @include text;
     }
   }
 
   .card-img {
     height: 71px;
     width: 70px;
+  }
+}
+
+#level-2 {
+  @include media-breakpoint-down(md) {
+    text-align: center !important;
   }
 }

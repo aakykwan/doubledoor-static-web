@@ -11010,6 +11010,10 @@ html, body {
   line-height: normal;
   letter-spacing: 1.5px; }
 
+p {
+  line-height: 1.4;
+  font-size: 17px; }
+
 .container {
   font-weight: 300;
   font-style: normal;
@@ -11022,17 +11026,13 @@ html, body {
   background-image: url("../img/bg_header.png");
   background-position: center top;
   height: 447px; }
+  #dd-header p {
+    color: #ffffff;
+    max-width: 570px; }
   #dd-header h1 {
     padding-top: 42px;
     font-size: 38px;
     font-weight: bold;
-    color: #ffffff; }
-  #dd-header p.lead {
-    max-width: 570px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.4;
-    letter-spacing: normal;
     color: #ffffff; }
 
 h2 {
@@ -11073,5 +11073,24 @@ h2 {
 @media (max-width: 991.98px) {
   #level-2 {
     text-align: center !important; } }
+
+.level-3 {
+  background-color: #f6f6f6; }
+  .level-3 h2 {
+    padding-bottom: 25px; }
+    .level-3 h2:after {
+      content: " ";
+      display: block;
+      padding-bottom: 25px;
+      width: 140px;
+      border-bottom: 2px solid #ffd62a; }
+    @media (max-width: 991.98px) {
+      .level-3 h2 {
+        padding: 0px; }
+        .level-3 h2:after {
+          display: none;
+          width: auto; } }
+  .level-3 .dd-l3-row {
+    min-height: 447px; }
 
 /*# sourceMappingURL=doubledoor.css.map */

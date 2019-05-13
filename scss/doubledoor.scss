@@ -4,6 +4,8 @@
 @import "bootstrap-reboot";
 @import "mixins/breakpoints";
 
+$level-height: 447px;
+
 html, body {
   font-family: Helvetica, sans-serif;
   font-style: normal;
@@ -13,12 +15,18 @@ html, body {
 }
 
 @mixin text {
+  //font-size: 20px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.29;
   letter-spacing: 0.3px;
   color: #404040;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 17px;
 }
 
 .container {
@@ -28,7 +36,12 @@ html, body {
 #dd-header {
   background-image: url('../img/bg_header.png');
   background-position: center top;
-  height: 447px;
+  height: $level-height;
+
+  p {
+    color: #ffffff;
+    max-width: 570px;
+  }
 
   h1 {
     padding-top: 42px;
@@ -37,14 +50,6 @@ html, body {
     color: #ffffff;
   }
 
-  p.lead {
-    max-width: 570px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.4;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
 }
 
 h2 {
@@ -98,5 +103,33 @@ h2 {
 #level-2 {
   @include media-breakpoint-down(md) {
     text-align: center !important;
+  }
+}
+
+.level-3 {
+  h2 {
+    padding-bottom: 25px;
+
+    &:after {
+      content: " ";
+      display: block;
+      padding-bottom: 25px;
+      width: 140px;
+      border-bottom: 2px solid #ffd62a;
+    }
+    @include media-breakpoint-down(md){
+      padding: 0px;
+      &:after {
+        //padding-bottom: 15px;
+        display: none;
+        width:auto;
+      }
+    }
+  }
+
+  background-color: #f6f6f6;
+
+  .dd-l3-row {
+    min-height: $level-height;
   }
 }

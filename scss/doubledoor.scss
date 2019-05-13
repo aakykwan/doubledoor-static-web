@@ -1,3 +1,9 @@
+@import "bootstrap";
+@import "variables";
+@import "bootstrap-grid";
+@import "bootstrap-reboot";
+@import "mixins/breakpoints";
+
 html, body {
   font-family: Helvetica, sans-serif;
   font-style: normal;
@@ -41,12 +47,22 @@ h2 {
 #level-1 {
   padding-top: 70px;
 
+  .dd-card-col {
+    @extend .col-md-6;
+    @extend .col-lg-3;
+    @extend .py-3;
+    //@extend .px-0;
+  }
+
   .card {
     text-align: center;
     font-size: 16px;
-    min-width: 200px;
+    //min-width: 200px;
 
     .card-title {
+      @include media-breakpoint-up(md) {
+        min-height: 34px;
+      }
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;

@@ -15,7 +15,7 @@
 <body>
 <!-- HEADER -->
 <div id="dd-header" class="container-fluid d-table">
-    <div class="container py-5"><img class="mx-auto d-block" src="img/logo.png" alt=""></div>
+    <div class="container py-5"><img class="mx-auto d-block" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x, img/logo@3x.png 3x" alt=""></div>
     <div class="container text-center h-100">
         <h1>Fulfill your American dream</h1>
         <p class="lead mx-auto">A marketplace for foreign investors, agents and other real estate professionals to
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <div class="dd-card-col">
-                <div class="card border-0"><img src="img/sub_01.png" alt="" class="card-img mx-auto">
+                <div class="card border-0"><img src="img/sub_01.png" srcset="img/sub_01.png 1x, img/sub_01@2x.png 2x, img/sub_01@3x.png 3x" alt="" class="card-img mx-auto">
                     <div class="card-body">
                         <div class="card-title">Search & View Listings</div>
                         <div class="card-text">View properties in four languages with VR and 360</div>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="dd-card-col">
-                <div class="card border-0"><img src="img/sub_02.png" alt="" class="card-img mx-auto">
+                <div class="card border-0"><img src="img/sub_02.png" srcset="img/sub_02.png 1x, img/sub_02@2x.png 2x, img/sub_02@3x.png 3x" alt="" class="card-img mx-auto">
                     <div class="card-body">
                         <div class="card-title">Order Services And Negotiate An Offer</div>
                         <div class="card-text">Order appraisal, inspection, and negotiate offer directly</div>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="dd-card-col">
-                <div class="card border-0"><img src="img/sub_03.png" alt="" class="card-img mx-auto">
+                <div class="card border-0"><img src="img/sub_03.png" srcset="img/sub_03.png 1x, img/sub_03@2x.png 2x, img/sub_03@3x.png 3x" alt="" class="card-img mx-auto">
                     <div class="card-body">
                         <div class="card-title">Purchase Process</div>
                         <div class="card-text">Blockchain smart contract and E-Sign the documents</div>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="dd-card-col">
-                <div class="card border-0"><img src="img/sub_04.png" alt="" class="card-img mx-auto">
+                <div class="card border-0"><img src="img/sub_04.png" srcset="img/sub_04.png 1x, img/sub_04@2x.png 2x, img/sub_04@3x.png 3x" alt="" class="card-img mx-auto">
                     <div class="card-body">
                         <div class="card-title">Grant Deed Recorded</div>
                         <div class="card-text">Property ownership transferred</div>
@@ -99,9 +99,9 @@
                     are trustworthy and reliable.</p>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="img/feature_01a.png" alt="" class="fluid d-block mx-auto mx-lg-0">
-                <img src="img/feature_01b.png" alt="" class="fluid d-block mx-auto mx-lg-0">
-                <img src="img/feature_01c.png" alt="" class="fluid d-block mx-auto mx-lg-0">
+                <img src="img/feature_01a.png" srcset="img/feature_01a.png 1x, img/feature_01a@2x.png 2x, img/feature_01a@3x.png 3x" alt="" class="img-fluid d-block mx-auto mx-lg-0">
+                <img src="img/feature_01b.png" srcset="img/feature_01b.png 1x, img/feature_01b@2x.png 2x, img/feature_01b@3x.png 3x" alt="" class="img-fluid d-block mx-auto mx-lg-0">
+                <img src="img/feature_01c.png" srcset="img/feature_01c.png 1x, img/feature_01c@2x.png 2x, img/feature_01c@3x.png 3x" alt="" class="img-fluid d-block mx-auto mx-lg-0">
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@
                     simplified Chinese and traditional Chinese.</p>
             </div>
             <div class="col-lg-6 text-center order-lg-1">
-                <img src="img/feature_02.png" alt="" class="fluid d-block mx-auto mx-lg-0">
+                <img src="img/feature_02.png" srcset="img/feature_02.png 1x, img/feature_02@2x.png 2x, img/feature_02@3x.png 3x" alt="" class="img-fluid d-block mx-auto mx-lg-0">
             </div>
         </div>
     </div>
@@ -132,7 +132,7 @@
                     contract integration to ensure a secure & verified purchasing process for each transaction.</p>
             </div>
             <div class="col-lg-6 text-center">
-                <img src="img/feature_03.png" alt="" class="fluid d-block mx-auto mx-lg-0">
+                <img src="img/feature_03.png" srcset="img/feature_03.png 1x, img/feature_03@2x.png 2x, img/feature_03@3x.png 3x" alt="" class="img-fluid d-block mx-auto mx-lg-0">
             </div>
         </div>
     </div>
@@ -155,3 +155,9 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!--
+(src=".*\/(.*?)(\.(png|jpg)))
+$0" srcset="img/$2$3 1x, img/$2@2x$3 2x, img/$2@3x$3 3x
+-->

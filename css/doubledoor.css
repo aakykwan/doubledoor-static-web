@@ -22,4 +22,37 @@ html, body {
     letter-spacing: normal;
     color: #ffffff; }
 
+h2 {
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  color: #404040; }
+
+#level-1 {
+  padding-top: 70px; }
+  #level-1 .card {
+    text-align: center;
+    font-size: 16px;
+    min-width: 200px; }
+    #level-1 .card .card-title {
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.1;
+      letter-spacing: 0.3px;
+      color: #404040; }
+    #level-1 .card .card-text {
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.29;
+      letter-spacing: 0.3px;
+      color: #404040; }
+  #level-1 .card-img {
+    height: 71px;
+    width: 70px; }
+
 /*# sourceMappingURL=doubledoor.css.map */
